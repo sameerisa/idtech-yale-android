@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+C:\Users\student\Documents\iD\idtech yale sameer\.metadata\.plugins\org.eclipse.jdt.core
+1868791364.index
+119197145.index
