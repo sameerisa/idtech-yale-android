@@ -1,15 +1,18 @@
 package com.example.rockpaperscissors;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
+import java.util.Random;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -49,16 +52,66 @@ public class MainActivity extends ActionBarActivity {
 	 */
 	public static class PlaceholderFragment extends Fragment {
 
+		Button rock;
+		Button paper;
+		Button scissors;
 		public PlaceholderFragment() {
 		}
 
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
+			
 			View rootView = inflater.inflate(R.layout.fragment_main, container,
 					false);
-			return rootView;
-		}
-	}
+			rock=(Button)rootView.findViewById(R.id.rock);
+			paper=(Button)rootView.findViewById(R.id.paper);
+			scissors=(Button)rootView.findViewById(R.id.scissors);
+			 
+			rock.setOnClickListener(new OnClickListener (){
 
+				@Override
+				public void onClick(View arg0) {
+					Random rnd = new Random();
+					int number = rnd.nextInt(3);
+				if(number==1){
+					Intent intent = new Intent(getActivity(), fail.class);
+					getActivity().startActivity(intent);
+				}
+				if(number==0){
+					Intent intent = new Intent(getActivity(), tie.class);
+					getActivity().startActivity(intent);
+					
+				}
+				if(number==2){
+					Intent intent = new Intent(getActivity(), win.class);
+					getActivity().startActivity(intent);
+				
+					
+				
+				}
+				
+				
+				}
+				
+			});
+				
+		
+		
+		
+			return rootView;
+		
+	}
+		
 }
+
+		
+	protected void log(String string) {
+			// TODO Auto-generated method stub
+			
+		
+	}
+	
+}
+
+

@@ -18,6 +18,15 @@
 <Button
     android:id="@+id/paper"
     android:text="Paper!"
-    />"
-
+    android:layout_width="150dp"
+    android:layout_height="75dp"
+    android:gravity="center_vertical"
+    />
+<Button
+    android:id="@+id/scissors"
+    android:text="Scissors!"
+    android:layout_width="150dp"
+    android:layout_height="75dp"
+    android:gravity="center_vertical"
+    />
 </LinearLayout>
