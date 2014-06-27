@@ -7,4 +7,6 @@
 <fullyQualifiedTypeName name="com.example.rockpaperscissors.R.layout"/>
 <fullyQualifiedTypeName name="com.example.actionrpg.R.id"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.view.SurfaceHolder"/>
+<fullyQualifiedTypeName name="android.graphics.Color"/>
 </qualifiedTypeNameHistroy>

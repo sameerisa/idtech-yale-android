@@ -1,0 +1,28 @@
+package com.example.astroids;
+
+import android.graphics.Canvas;
+import android.view.SurfaceHolder;
+
+public class gamethread extends Thread{
+	private SurfaceHolder surfaceHolder;
+private gameview gameView;
+private boolean running;
+public void setRunning(boolean running)
+{
+	this.running = running;
+}
+public gamethread(SurfaceHolder surfaceHolder, gameview gameView)
+
+{
+	super();
+	this.surfaceHolder = surfaceHolder;
+			this.gameView = gameView;
+}
+public void run()
+{
+	Canvas canvas;
+	while (running){
+		
+	}
+}
+}
