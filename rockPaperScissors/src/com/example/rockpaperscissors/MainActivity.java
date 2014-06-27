@@ -67,9 +67,61 @@ public class MainActivity extends ActionBarActivity {
 			rock=(Button)rootView.findViewById(R.id.rock);
 			paper=(Button)rootView.findViewById(R.id.paper);
 			scissors=(Button)rootView.findViewById(R.id.scissors);
+			scissors.setOnClickListener(new OnClickListener()
+			{
+
+				@Override
+				public void onClick(View v) {
+					Random rnd = new Random();
+					int number = rnd.nextInt(3);
+					if(number==0)
+					{
+					Intent intent = new Intent(getActivity(), fail.class);
+					getActivity().startActivity(intent);
+					}
+				if(number==1)
+				{
+					Intent intent = new Intent(getActivity(), win.class);
+					getActivity().startActivity(intent);
+				}
+				
+					if(number==2){
+						Intent intent = new Intent(getActivity(), tie.class);
+						getActivity().startActivity(intent);
+					}
+				
+				}
+				
+			});
+			 paper.setOnClickListener(new OnClickListener()
+			 {
+
+				@Override
+				public void onClick(View arg0) {
+					Random rnd = new Random();
+					int number = rnd.nextInt(3);
+		if(number==0){
+			Intent intent = new Intent(getActivity(), win.class);
+			getActivity().startActivity(intent);
+		}			
+		if(number==1)
+		{
+			Intent intent = new Intent(getActivity(), tie.class);
+			getActivity().startActivity(intent);
+			
+		}
+		
+		if(number==2){
+			Intent intent = new Intent(getActivity(), fail.class);
+			getActivity().startActivity(intent);
+		}
+		}
+				 
+			 });
 			 
 			rock.setOnClickListener(new OnClickListener (){
-
+		
+				
 				@Override
 				public void onClick(View arg0) {
 					Random rnd = new Random();
