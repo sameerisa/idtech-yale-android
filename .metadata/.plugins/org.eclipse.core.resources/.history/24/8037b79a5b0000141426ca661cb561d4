@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <ImageButton
+     
+        android:id="@+id/create"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/new_pic"
+        />
+  <ImageButton 
+     
+      android:id="@+id/brush"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:src="@drawable/brush"
+      />
+  <ImageButton 
+      android:id="@+id/eraser"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:src="@drawable/eraser"
+      
+      />
+  <ImageButton 
+      android:id="@+id/save"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:src="@drwable/save"
+      />
+   
+    
+
+</LinearLayout>

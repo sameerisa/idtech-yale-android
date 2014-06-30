@@ -1,0 +1,18 @@
+package com.example.paint;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+
+public class canvas extends View {
+
+	public canvas(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		// TODO Auto-generated constructor stub
+		setupdrawing();
+	}
+	public void setupdrawing()
+	{
+		
+	}
+}

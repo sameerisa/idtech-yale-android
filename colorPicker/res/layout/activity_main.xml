@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+ android:orientation="vertical" android:id="@+id/linearLayout"  
+ android:layout_height="fill_parent" android:layout_width="fill_parent"  
+ android:clickable="false">  
+ <ImageView android:id="@+id/imgView" android:layout_width="fill_parent"  
+  android:layout_height="380dip"></ImageView>  
+ <LinearLayout android:orientation="horizontal"  
+  android:layout_width="fill_parent" android:id="@+id/linearbaseRow"  
+  android:background="@color/white" android:gravity="bottom"  
+  android:layout_height="50dip">  
+ </LinearLayout>  
+  
+</LinearLayout>  

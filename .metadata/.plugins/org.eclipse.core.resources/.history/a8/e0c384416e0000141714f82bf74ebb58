@@ -1,0 +1,47 @@
+package com.example.paint;
+
+import android.app.Activity;
+import android.graphics.Bitmap;
+import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ImageView;
+
+public class MainActivity extends Activity {
+	private final int DIALOG_SINGLE_CHOICE=0;	
+	ImageView imgView; 
+	int color=0;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		imgView = (ImageView)findViewById(R.id.imageview);
+		imgView.setBackgroundResource(R.drawable.visiblespectrum);
+	}
+
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		try{
+		View linearlayout;
+		View tempView = linearlayout.getRootView();
+		tempView.setDrawingCacheEnabled(true);
+		Bitmap temBitmap = tempView.getDrawingCache();
+		color= temBitmap.getPixel((int)event.getX() (int)event .getY(), DIALOG_SINGLE_CHOICE);
+		showColor();
+		
+		} catch(Exception e) {
+			
+		}
+		
+		
+		return super.onTouchEvent(event);
+	}
+
+	private void showColor() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
