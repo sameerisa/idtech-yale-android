@@ -6,10 +6,14 @@
 <fullyQualifiedTypeName name="com.example.rockpaperscissors.R.id"/>
 <fullyQualifiedTypeName name="com.example.rockpaperscissors.R.layout"/>
 <fullyQualifiedTypeName name="com.example.actionrpg.R.id"/>
-<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.view.SurfaceHolder"/>
 <fullyQualifiedTypeName name="android.graphics.Color"/>
 <fullyQualifiedTypeName name="com.example.paint.R.drawable"/>
 <fullyQualifiedTypeName name="android.graphics.Bitmap"/>
+<fullyQualifiedTypeName name="android.widget.ImageButton"/>
 <fullyQualifiedTypeName name="com.example.paint.R.id"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.app.AlertDialog"/>
+<fullyQualifiedTypeName name="android.app.AlertDialog.Builder"/>
+<fullyQualifiedTypeName name="com.example.paint.R.layout"/>
 </qualifiedTypeNameHistroy>

@@ -1,9 +1,0 @@
-import java.util.Scanner;
-public class Runhellowords {
-public static void main (String[]args) {
-
-String phrase = "Hello iDTech";
-System.out.println(phrase);
-
-}
-}
