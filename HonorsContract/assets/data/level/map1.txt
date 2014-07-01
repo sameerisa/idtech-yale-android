@@ -1,0 +1,33 @@
+! # = Tile Legend 
+! A - block	
+! B - Ground-grass
+! C - Ground-dirt
+! D - Cave
+! E - Rock
+! F - Sand
+! X - Bronze Coin
+! Y - Silver Coin
+! Z - Gold Coin
+! COINS NEED AT LEAST 1 SPACE ABOVE
+! ^ - Jumping platform
+! TOP of SCREEN 
+!        #          #          #          #          #          #          #          #          #          #          #          #          #          #          #          #          #          #          #          #          #
+A                                                                                                                                                                                    
+A                                                                                                                                                                                    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+A                                                                                                                                                                                    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+A               Z       Z       Z       Z                                                                                                                                            AA>                           AAA
+A               A       ^       ^       ^                                                                                                                                            AA> ZZZZZZZZZZZZZZZZZZZ       AAA^^
+A                                                                                                                                                                                    AA  AAAAAAAAAAAAAAAAAAAAAAA   AAA
+A                                              A                                                                                                                                     AA                      <AA   AAA
+A                                                                                                                                                                                    AA^^ZZZZZZZZZZZZZZZZZZZ <AA   AAA
+A                                                                                                                                                                                    AAAAAAAAAAAAAAAAAAAAAAA  AA   AAA
+A                                          ^AAAAA                                           ^^^^^                                                     Z                              AA>                      AA   AAA^^
+A                                                                                                        AAAAAAAAAA                          Z          Z                            AA> ZZZZZZZZZZZZZZZZZZZ^^AA   AAA
+A                                                        ^AAA                                                                                Z            Z                          AA  AAAAAAAAAAAAAAAAAAAAAAA   AAA
+A                                                                                           AAAAA                                            Z              Z                        AA                      <AA   AAA
+A                                                                  AAAAAA                                                                    Z              Z                        AA^^ZZZZZZZZZZZZZZZZZZZ <AA   AAA
+A                             AAA                 XX               AAAAAA^                                                                   Z              Z                        AAAAAAAAAAAAAAAAAAAAAAA  AA   AAA^^
+A                                                                                     AAAAAAAAAAAAAAA      ^                                 Z                                        >                       AA    
+A                              XYZXYZXYZ                                                                                                                                              >ZZZZZZZZZZZZZZZZZZZZZ^^AA   
+BBBBBBBBBBBBBBBBBB^^BBBBBBBBBBBBBBBBBBBBBBBBBBBBB^^     BBBBBBBBBBBBBBBBBBBBBBB^^                                 BBBBBBB^^BBBBBBBBB^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB    
+!        #          #          #          #          #          #          #          #          #          #          #          #          #          #          #          #          #          #          #          #          #

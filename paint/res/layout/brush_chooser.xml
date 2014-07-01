@@ -3,6 +3,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+    <ImageButton
+        android:id="@+id/small"
+        android:src="@drawable/blackcircle"
+       android:layout_width="50dp"
+       android:layout_height="100dp"
+        />
+    <ImageButton 
+        android:id="@+id/medium"
+        android:src="@drawable/blackcircle2"
+        android:layout_height="100dp"
+        android:layout_width="50dp"
+        
+        />
+    <ImageButton
+        android:id="@+id/big"
+        android:src="@drawable/blackcircle3"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        
+        />
     
 
 </LinearLayout>
