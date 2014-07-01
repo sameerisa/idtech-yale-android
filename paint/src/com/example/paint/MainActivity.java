@@ -10,12 +10,14 @@ import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity<Drawingview> extends Activity {
 	private final int DIALOG_SINGLE_CHOICE = 0;
-
+	private Drawingview drawview;
+	private ImageButton currPaint, drawBtn, eraseBtn, newBtn, saveBtn;
+	private float smallBrush, mediumBrush, largeBrush;
 	TextView test;
 	int color = 0;
-	canvas drawing;
+	drawingView drawing;
 	ImageButton create;
 	ImageButton brush;
 	ImageButton save;
@@ -26,8 +28,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		drawing = (canvas) findViewById(R.id.canvas);
-
+		drawing = (drawingView) findViewById(R.id.canvas);
+		drawing.setBrushSize(20);
 		create = (ImageButton) findViewById(R.id.create);
 		brush = (ImageButton) findViewById(R.id.brush);
 		eraser = (ImageButton) findViewById(R.id.eraser);
@@ -62,7 +64,8 @@ public class MainActivity extends Activity {
 
 							}
 						});
-			savedialog.show();}
+				savedialog.show();
+			}
 
 		});
 		eraser.setOnClickListener(new OnClickListener() {
@@ -102,7 +105,6 @@ public class MainActivity extends Activity {
 
 							@Override
 							public void onClick(DialogInterface arg0, int arg1) {
-								// TODO Auto-generated method stub
 
 							}
 						});
@@ -112,11 +114,11 @@ public class MainActivity extends Activity {
 							@Override
 							public void onClick(DialogInterface dialog,
 									int which) {
-								// TODO Auto-generated method stub
 
 							}
 						});
-			createdialog.show();}
+				createdialog.show();
+			}
 
 		});
 	}

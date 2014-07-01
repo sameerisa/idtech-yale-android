@@ -37,7 +37,7 @@
             android:src="@drawable/save" />
     </LinearLayout>
 
-    <com.example.paint.canvas
+    <com.example.paint.drawingView
         android:id="@+id/canvas"
         android:layout_width="match_parent"
         android:layout_height="0dp"

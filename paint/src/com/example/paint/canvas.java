@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -13,11 +14,12 @@ public class canvas extends View {
 	private int paintcolor=0x00000000;
 
 	private Bitmap map;
-	private Canvas paint;
+	private Canvas canvas;
 	private Path drawPath;
 	private Paint drawPaint;
 	private Paint canvasPaint;
-
+	private float brushsize;
+	
 	
 	public canvas(Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -48,7 +50,7 @@ public class canvas extends View {
 	}
 	@Override
 	protected void onDraw(Canvas canvas) {
-		canvas.drawBitmap(map,  0, 0, drawPaint);
+		canvas.drawBitmap(map,  0, 0, canvasPaint);
 		canvas.drawPath(drawPath, drawPaint);
 	
 	
@@ -57,8 +59,8 @@ public class canvas extends View {
 	protected void onSizeChanged(int w, int h, int oldw, int oldh) {
 		// TODO Auto-generated method stub
 		super.onSizeChanged(w, h, oldw, oldh);
-		map.createBitmap(w,h, Bitmap.Config.ARGB_8888);
-		paint = new Canvas(map);
+		map = Bitmap.createBitmap(w,h, Bitmap.Config.ARGB_8888);
+		canvas = new Canvas(map);
 	}
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
@@ -72,15 +74,22 @@ public class canvas extends View {
 			drawPath.lineTo(touchX, touchY);
 			break;
 		case MotionEvent.ACTION_UP:
-			paint.drawPath(drawPath, drawPaint);
+			canvas.drawPath(drawPath, drawPaint);
 			drawPath.reset();
 			break;
+			
 		default:
 			return false;
 		}
-		
+	
 		invalidate();
 		return true;
+	}
+	public void setBrushSize(float newSize) {
+		float pixellAmount = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,newSize, getResources().getDisplayMetrics());
+		brushsize=pixellAmount;
+		drawPaint.setStrokeWidth(20);
+		
 	}
 	
 
