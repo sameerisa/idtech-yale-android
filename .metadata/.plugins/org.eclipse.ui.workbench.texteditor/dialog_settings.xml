@@ -2,29 +2,32 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="305" key="DIALOG_WIDTH"/>
-		<item value="263" key="DIALOG_Y_ORIGIN"/>
+		<item value="311" key="DIALOG_Y_ORIGIN"/>
+		<item value="475" key="DIALOG_X_ORIGIN"/>
 		<item value="444" key="DIALOG_HEIGHT"/>
-		<item value="655" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
-		<item value="false" key="wholeword"/>
-		<item value="public" key="selection"/>
+		<item value="true" key="wholeword"/>
+		<item value="small_size" key="selection"/>
 		<list key="findhistory">
+			<item value="small"/>
+			<item value="large_brush"/>
+			<item value="medium_brush"/>
+			<item value="//"/>
+			<item value="start"/>
+			<item value="set"/>
+			<item value="drawView"/>
 			<item value="&#x09;&#x09;&#x09;"/>
-			<item value="public set"/>
-			<item value="public"/>
-			<item value="0"/>
-			<item value="Oncreate"/>
-			<item value="save"/>
-			<item value="i"/>
-			<item value="send"/>
 		</list>
 		<list key="replacehistory">
+			<item value="small_size"/>
+			<item value="big"/>
+			<item value="medium"/>
 		</list>
 	</section>
 </section>
