@@ -11,7 +11,13 @@
         android:layout_height="50dp"
         android:gravity="center"
         android:orientation="horizontal" >
-
+<ImageButton 
+    android:id="@+id/orientation"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:onClick="onClick"
+    android:src="@drawable/orientation"
+    />
         <ImageButton
             android:id="@+id/create"
             android:layout_width="50dp"
