@@ -1,8 +1,10 @@
 package com.example.astroids;
 
+import android.annotation.SuppressLint;
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
 
+@SuppressLint("WrongCall")
 public class gamethread extends Thread {
 	private SurfaceHolder surfaceHolder;
 	private gameview gameView;
@@ -31,6 +33,10 @@ public class gamethread extends Thread {
 					this.gameView.onDraw(canvas);
 				}
 			} finally {
+				if (canvas != null) {
+					surfaceHolder.unlockCanvasAndPost(canvas);
+				}
+					
 			}
 		}
 	}

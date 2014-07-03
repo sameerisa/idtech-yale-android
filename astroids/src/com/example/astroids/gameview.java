@@ -21,7 +21,7 @@ public class gameview extends SurfaceView implements SurfaceHolder.Callback {
 		thread = new gamethread(getHolder(), this);
 		setFocusable(true);
 		spaceship = new Spaceship(BitmapFactory.decodeResource(getResources(),
-				R.drawable.spaceship), 50, 50);
+				R.drawable.spaceship), 50,600);
 	}
 
 	@Override
@@ -50,18 +50,27 @@ public class gameview extends SurfaceView implements SurfaceHolder.Callback {
 
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
-		// TODO Auto-generated method stub
-		return true;
+		if (event.getAction() == MotionEvent.ACTION_DOWN) {
+	        if(event.getX() > getWidth()/2) {
+	            spaceship.setXVelocity(5);
+	        }else {
+	            spaceship.setXVelocity(-5);
+	        }
+	    }
+	    if (event.getAction() == MotionEvent.ACTION_UP) {
+	        spaceship.setXVelocity(0);
+	    }
+	    
+	    return true;
 	}
-public void draw(Canvas canvas) {
-	canvas.drawBitmap(bitmap, 50, 50, null);
-	x = x + xVelocity;
-}
+
+
 	@Override
 	protected void onDraw(Canvas canvas) {
 		
 		 canvas.drawColor(Color.BLACK);
 		    spaceship.draw(canvas);
+		   
 	}
-
+	
 }

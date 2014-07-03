@@ -1,0 +1,14 @@
+package com.example.astroids;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+
+public class Asteroid {
+	public Bitmap bitmap;
+	public int x;
+	public int y;
+	public int xVelocity;
+	public void draw(Canvas canvas) {
+	    canvas.drawBitmap(bitmap, x, y, null);
+	    y = y + 5;
+	}
+}

@@ -3,4 +3,5 @@ com.android.ide.eclipse.adt.palette=SMALL_PREVIEW,noauto
 com.android.ide.eclipse.adt.sdk=C\:\\Users\\student\\Desktop\\adt-bundle-windows-x86_64-20140321\\sdk
 com.android.ide.eclipse.adt.xmlEditor=true
 design.palette.flyout.width=178
+design.structure.flyout.width=236
 eclipse.preferences.version=1
